@@ -1,6 +1,6 @@
 # Development Process
 
-## Activities of the development process
+<!-- ## Activities of the development process
 
 - (ps) Planning Sprint
 - (rg) Requirements Gathering
@@ -19,26 +19,71 @@
 - (progm) Programmer
 - (tester) Tester
 
+## Items for configuration manage
+
+- (reqdoc) Requirements document
+- (dsgdoc) Design document
+- (impdoc) Implementation document
+- (tstdoc) Test document
+- (depdoc) Deployment document -->
+
+## Identification table of terms
+
+|ID|**Activies of the development process**||ID|**Job Functions**||ID|**Items for configuration manage**|
+|:---:|:---:                |:---:|:---:|:---:             |:---:|:---:|:---:|
+|plnspr|Planning Sprint         ||prjmn|Project manager        ||reqdoc|Requirements document|
+|reqgat|Requirements Gathering  ||sysan|System Analyst         ||dsgdoc|Design document         |
+|dsgprj|Design Project          ||dsgnr|System Designer        ||impdoc|Implementation document |
+|codimp|Code Implementation     ||archt|Software Architect     ||tstdoc|Test document           |
+|systst|System Testing          ||progm|Programer              ||dpydoc|Deployment document     |
+|sysdpy|System Deployment       ||teste|Tester                                                  |
+
+## Commit setting
+
+    # Default commits template
+
+        [<Job function ID Key>_<Activity ID Key>_<Commit Counter per job function>] <Description commit>
+
+    # Examples commits
+
+        [prjmn_reqgat_001] This is a commit
+        [dsgnr_dsproj_001] This is a another commit
+
+## Tags settings for baseline and releases
+
+    # Default tags template
+
+        Baseline tag
+            [tgbl_<Job function ID Key>_<Configuration Item Id Key for management>_<Tag Counter per item of configuration>]
+
+        Release tag
+            [tgrl_<Job function ID Key>_<Configuration Item Id Key for management>_<Tag Counter per item of configuration>]
+
+    # Examples tags
+
+        [tg_sysan_rd_001] Baseline of requeriments document defined
+
+___
+___
+
 ## Life Cycle Model
 
 - Iterative and incremental lifecycle model
-- Using the UML in the iterative and incremental process
 
-## Schedule
+### Feature table
 
-||__ACTIVITIES__| Requirements Gathering | Requirements Analysis | Design Project | Code Implementation | System Testing | System Deployment |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| __SPRINTS__||||||||
-|||||||||
-|||||||||
+|PRODUCT BACKLOG|SPRINT PLANNING MEETING|SPRINT BACKLOG|
+|:---:|:---:|:---:|
+|||
+|||
+|||
 
-## ID Key Commits
+### Task Table
 
-### Pattern template
+|Project manager|System Analyst|System Designer|Software Architect|Programer|Tester|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|||
+|||
+|||
 
-[\<__Job function ID Key__>\_\<__Activity ID Key__>\_\<__Commit Counter per job function__>] \<__Description commit__>
-
-### Examples
-
-- [projm_rg_001] This is a commit
-- [dsgnr_ds_001] This is a another commit
+![Gantt diagram](./img/gantt.png)
