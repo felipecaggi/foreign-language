@@ -13,14 +13,50 @@
 	\newpage
 	
 	\chapter{INTRODUCTION}
-	
-		\section{Full view of this document}
-		\section{Conventions, terms and abbreviations}
-			\subsection{Identification of requirements}
-			\subsection{Priority of requirements}
-		\section{References}
 		
-	\chapter{GENERAL DESCRIPTION OF THE SYSTEM}
+		This document specifies the "foreign language" system, providing developers with the necessary information for the design and implementation, as well as for testing and system approval.
+		
+		\section{Full view of this document}
+		
+			This introduction provides the information needed to make good use of this document, explaining its objectives and the conventions that have been adopted in the text, as well as contains a list of references to other related documents. The other sections present the specification of the "foreign language" system and are organized as described below.
+			
+			\begin{itemize}
+				\item Section 2 - System Overview: provides an overview of the system, characterizing its scope and describing its users.
+				\item Section 3 - Functional requirements (use cases): it specifies all the functional requirements of the system, describing the flows of events, priorities, actors, inputs and outputs of each use case to be implemented.
+				\item Section 4 - Non-functional requirements: specifies all non-functional system requirements, broken down into usability, reliability, performance, security, distribution, adequacy, and hardware and software requirements.
+				\item Section 5 - User Interface Description: displays drawings, figures, or sketches of system screens.
+			\end{itemize}						
+			
+		\section{Conventions, terms and abbreviations}
+			
+			The interpretation correct this document exige the knowledge of some conventionals and specific terms, that are describes next.
+			
+			\subsection{Identification of requirements}
+			
+				By convention, the reference to the requirements is made through the name of the subsection where they are described, followed by the identifier of the requirement, according to the scheme below:
+
+				\begin{center}
+					[requirement subsection.identifier name]	
+				\end{center}						
+			
+
+				For example, the requirement [Data Retrieval.RF016] is described in a subsection called "Data Retrieval", in a block identified by the number [RF016]. The nonfunctional requirement [Reliability.NF008] is described in the section on non-functional reliability requirements, in a block identified by [NF008].
+				
+			\subsection{Priority of requirements}
+			
+				In order to establish the priority of the requirements, the denominations "essential", "important" and "desirable" have been adopted.
+				
+				\begin{itemize}
+					\item Essential is the requirement without which the system does not go into operation. Essential requirements are requirements that must be implemented certainly.
+					\item Important is the requirement without which the system goes into operation, but in an unsatisfactory way. Important requirements must be implemented, but if they are not, the system can be deployed and used anyway.
+					\item Desirable is the requirement that does not compromise the basic functionalities of the system, that is, the system can function satisfactorily without it. Desirable requirements are requirements that can be left for later versions of the system if there is not enough time to implement them in the version being specified.	
+				\end{itemize}
+
+		\section{References}
+				
+				Documents related to the "foreign-language" system and / or mentioned in the following sections:
+		
+	\chapter{SYSTEM OVERVIEW}
 		
 		\section{Abragency and relational systems}
 		\section{User description}
@@ -29,6 +65,6 @@
 		
 	\chapter{NON-FUCTIONAL REQUIREMENTS}
 	
-	\chapter{DESCRIPTION OF THE INTERFACE WITH THE USER}
+	\chapter{USER INTERFACE DESCRIPTION}
 
 \end{document}
