@@ -86,4 +86,4 @@ ___
 |||
 |||
 
-![Gantt diagram](./img/gantt.png)
+![Gantt diagram](./diagrams/img/gantt.png)
