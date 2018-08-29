@@ -3,6 +3,15 @@
 % chapters numbered without interruption (numbering through parts)
 \makeatletter\@addtoreset{chapter}{part}\makeatother
 
+ \usepackage{color}
+ 
+ \definecolor{Blue}{rgb}{0,0,0.9}
+ 
+ \definecolor{Red}{rgb}{1,0,0}
+
+
+
+
 \begin{document}
 
 	\title{Repository requirements document "foreign-language"}
@@ -57,10 +66,22 @@
 				Documents related to the "foreign-language" system and / or mentioned in the following sections:
 		
 	\chapter{SYSTEM OVERVIEW}
+
+		The "foreign language" system is a desktop application that aims to identify patterns in the English language.
+The importance of the application for the users is characterized in order to transmit knowledge about the most used tags, facilitating the language learning. In addition to creating a database that can be used in the future in other applications.		
 		
 		\section{Abragency and relational systems}
+		
+			The "foreign-language" system will receive text entries, and then perform the pattern search based initially on the number of word repetitions and later of the combination repeats. Each text insertion, the words, and possible combinations will be transferred to a database, where another section of the application is responsible for selecting the main sentences obtained and also responsible for returning this information to the user.
+			
+			It is important to understand that the application will not make available the database created by a user to the other users of the system, that is, each user will have their personal bank of words and combinations based on their inserted texts. This division is taken in order to simplify the initial development of the system, however, the system will be developed in order to facilitate future evolutions, such as database sharing.
+			  
+  			\textcolor{Red}{List and briefly describe the other systems with which this system should interact, explaining, in a general way, the roles of each and the means of communication between them.}
+  			
 		\section{User description}
-	
+			
+			The application will be used by ordinary users\footnote{The system will be constructed so the user does not need to have specific knowledge present in the area of information technology.}. So , from the definition of users, it is identified that the main difficulties of the user are linked to the vocabulary, making it difficult to identify content words\footnote{Content words are the most important words in a sentence. They express the idea of what we mean.} and functions words\footnote{Function words are words that help us connect important information. They are the words that make the sentences grammatically correct.}, implying in this way, in the difficulty of understanding the full significate of a prhase.
+			
 	\chapter{FUNCTIONAL REQUIREMENTS}
 		
 	\chapter{NON-FUCTIONAL REQUIREMENTS}
