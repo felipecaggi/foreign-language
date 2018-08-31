@@ -9,9 +9,6 @@
  
  \definecolor{Red}{rgb}{1,0,0}
 
-
-
-
 \begin{document}
 
 	\title{Repository requirements document "foreign-language"}
@@ -84,69 +81,79 @@ The importance of the application for the users is characterized in order to tra
 			
 	\chapter{FUNCTIONAL REQUIREMENTS}
 	
-		\section{Requirements List}
+		\section{Evident Functional Requirements}
 		
-			\subsection{Register of texts}
+			\begin{description}
+
+				\item[RF001] Register texts from user inputs.
+				\item[RF002] To present texts registered in the system.
+				\item[RF003] To present words cataloged in each text.
+				\item[RF004] To present all words registered in the system.
+				\item[RF005] To present the count of distinct words in each text.
+				\item[RF006] To present the count of words in each text registered for the first time in the system.
+				\item[RF007] To present the count of all words distincts registered in the system. 
+				\item[RF008] To present the count of repetitions of words in each text.
+				\item[RF009] To present the count of repetitions of words of all texts registered in the system.
+				\item[RF010] To present the indices of repetitions of the words.
+				\item[RF011] To present the words most repeated in each text.
+				\item[RF012] To present the words most repeated in all the texts.
+				\item[RF013] To present combinations of the words cataloged in each text.
+				\item[RF014] To present all combinations of the words registered in the system.
+				\item[RF015] To present count of combinations of the distinct words in each text.
+				\item[RF016] To present count of combinations of the words in each text registered for the first time in the system.
+				\item[RF017] To present the count of all the combinations of the distinct words registered in the system.
+				\item[RF018] To present the count of repetitions of the combinations of the words in each text.
+				\item[RF019] To present the count of repetition of the combinations of the words in all text registered in the system.
+				\item[RF020] To present the indices of repetitions of the word combinations.
+				\item[RF021] To present the word combinations most repeated in each text.
+				\item[RF022] To present the word combinations most repeated in all the texts.
+				\item[RF023] Import and export the registered database.
+				\item[RF024] CRUD users.			
+
+			\end{description}
 			
-				\begin{itemize}
-					\item Register texts from user inputs.
+		\section{Hidden Functional Requirements}
+			
+			\begin{description}
+
+				\item[RF025] Separate and catalog all the words of the texts registered in the system.
+				\item[RF026] Calculate the indices of repetition of the words.
+				\item[RF027] Separate and catalog all combinations of words from the texts registered in the system.
+				\item[RF028] Calculate the indices of repetitions of the word combinations.
+
+			\end{description}
+			
+		\section{Detailing functional requirements}
+			
+			\subsection{[RF001] Register texts from user inputs}
 				
-					\item To present texts registered in the system.
-				\end{itemize}
-
-			\subsection{Register of words}
-
-				\begin{itemize}
-					\item Separate and catalog all the words of the texts registered in the system.
+				\begin{description}
 				
-					\item To present words cataloged in each text.
-					\item To present all words registered in the system.
-
-					\item To present the count of distinct words in each text.
-					\item To present the count of words in each text registered for the first time in the system.
-					\item To present the count of all words distincts registered in the system. 
-				
-					\item To present the count of repetitions of words in each text.
-					\item To present the count of repetitions of words of all texts registered in the system.
-				
-					\item Calculate the indices of repetition of the words.
-					\item To present the indices of repetitions of the words.
-				
-					\item To present the words most repeated in each text.
-					\item To present the words most repeated in all the texts.
-				\end{itemize}
-
-			\subsection{Register of word combinations}
-
-				\begin{itemize}
-					\item Separate and catalog all combinations of words from the texts registered in the system.
-
-					\item To present combinations of the words cataloged in each text.
-					\item To present all combinations of the words registered in the system.
-				
-					\item To present count of combinations of the distinct words in each text.
-					\item To present count of combinations of the words in each text registered for the first time in the system.
-					\item To present the count of all the combinations of the distinct words registered in the system.
-				
-					\item To present the count of repetitions of the combinations of the words in each text.
-					\item To present the count of repetition of the combinations of the words in all text registered in the system.
-
-					\item Calculate the indices of repetitions of the word combinations.
-					\item To present the indices of repetitions of the word combinations.
-				
-					\item To present the word combinations most repeated in each text.
-					\item To present the word combinations most repeated in all the texts.
-				\end{itemize}
-
-			\subsection{Others requirements}
-
-				\begin{itemize}
-					\item Import and export the registered database.
-					\item <<crud>> users.			
-				\end{itemize}
+					\item[Description]: The user accesses the registration section of the new texts. The user enters the input text and confirms. The process is automatic. The system records the text and informs the user of the confirmation of the registration.	
+					\item[Priority]: [X] Essential [ ] Important [ ] Desirable
+					\item[Input information]:
+						\begin{enumerate}
+						
+							\item The text to be registered.
+							
+						\end{enumerate}
+					\item[Output information]:
+						\begin{enumerate}
+						
+							\item The confirmation of text entry.
+							\item The information report obtained with the inserted text (Display words, word combinations and repetition statistics).
+														
+						\end{enumerate}
+	
+				\end{description}
 		
 	\chapter{NON-FUCTIONAL REQUIREMENTS}
 	
 	\chapter{USER INTERFACE DESCRIPTION}
 
 \end{document}
+
+			\subsection{Register of texts}
+			\subsection{Register of words}
+			\subsection{Register of word combinations}
+			\subsection{Others requirements}
