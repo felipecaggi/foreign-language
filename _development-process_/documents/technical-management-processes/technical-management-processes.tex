@@ -38,9 +38,9 @@
                 The interpretation correct this document exige the knowledge of some conventionals and specific terms, that are describes next.	                
                 
                 \subsection{Identification of commits}
-                
+                	
                 	\begin{center}
-                		$[<Job Function ID Key>\_<Activity ID Key>\_<Commit Counter Per Job function>] <Description Commit>$
+                		$[<Job Function ID Key\footnote{See section 2.2 for more details}>\_<Activity ID Key\footnote{See section 2.1 for more details}>\_<Commit Counter Per Job function>] <Description Commit>$
                 	\end{center}
                 
                 \subsection{Identification of tags for baseline or releases}
@@ -62,9 +62,7 @@
                     Documents related to the "foreign-language" system and / or mentioned in the following sections:
             
         \chapter{PROJECT PLANNING PROCESS}
-        
-        	\section{Plan project and technical management}
-        	
+                	
         		\section{Project phases}
         		
 					The development process adopted for this project has in its scope the following phases:
@@ -78,8 +76,9 @@
         				
         			\end{enumerate}
         			
-        			As subções 2.2.1 a 2.2.4 apresentam o detalhamento de atividades em cada fase do processo de desenvolvimento adotado.
-	        		\subsection{Concepção}
+        			Subsections 2.2.1 and 2.2.4 present the details of the activities at each stage of the development process adopted.
+	        		
+	        		\subsection{Conception}
 
 						The conception phase presents in its scope the following activities:	
 							
@@ -91,7 +90,7 @@
 	        						
 					        \item $[reqgat]$ Requirements Gathering
 					        
-					        	It corresponds to searching for all the possible information about the functions that the system must execute and the reticulations on which the system must operate. The product of this step will be the \emph{documento de requisitos}, main component of the software design.
+					        	It corresponds to searching for all the possible information about the functions that the system must execute and the reticulations on which the system must operate. The product of this step will be the \emph{requirements document}, main component of the software design.
 					        	
 							\item $[reqaly]$ Requirements Analysis
 							
@@ -103,9 +102,9 @@
 								
 	        			\end{enumerate}
 	        			
-    	    		\subsection{Elaboração}
+    	    		\subsection{Elaboration}
     	    		
-    	    			A fase de elaboração apresenta em seu escopo as seguintes atividades:
+    	    			The elaboration phase presents in its scope the following activities:
 	        			
 	        			\begin{enumerate}
 	        				
@@ -116,10 +115,74 @@
 							
 	        			\end{enumerate}
 	        			
-        			\subsection{Construção}
+        			\subsection{Construction}
         			
-        			\subsection{Transição}
+        			\subsection{Transicion}
+        	
+        	\section{Roles e responsibilities}
+        	
+				From the phases and activities defined in section 2.1, it was decided that this project will adopt the following roles for the members of the development team:
+        		
+        		\begin{itemize}
+        		        			
+        			\item $[prjmn]$ Project manager: responsible for project management. The following activities are part of the project manager's scope of responsibilities:
+        			
+						\begin{enumerate}
+							\item Define technical management processes.						
+						\end{enumerate}					        			
+        			
+        			\item $[sysan]$ System analyst: it acts in the conception and elaboration phase, described in section 2.1.1 and 2.1.2. Responsible for the following activities:
+        				\begin{enumerate}
+        					\item Accomplish business modeling.
+        					\item Raise system requirements.
+        					\item Analyze requirements.
+        					\item Define high-level use cases.
+        					\item Expand use cases.
+        				\end{enumerate}
+        		
+        			\item $[dsgnr]$ System designer: it acts in the elaboration phase described in section 2.1.2. Responsible for the following activities:
+        				\begin{enumerate}
+        					\item Determine system events and responses.
+        					\item Build and refine conceptual model.
+        					\item Elaboration of operating contract and system queries.
+        				\end{enumerate}
+        			
+        			\item $[archt]$ Software architect
+        			
+        			\item $[progm]$ Programer
+        			
+        			\item $[testr]$ Tester
+        			
+        		\end{itemize}
+        		
+			\section{Infrastructure and services required}
+				
+				This section covers the infrastructure and services required for the development of the "foreign-language" system.
+				
+				\subsection{Computer-Aided Software Engineering}
+					
+					During project development, team members will use tools to aid in software engineering activities.
+					
+					Below are listed by category the tools required for the development of the "foreign language" system.
 
+					\subsubsection{Documentation}
+					
+						\begin{itemize}
+							\item Texmaker
+						\end{itemize}
+					
+					\subsubsection{Vesion control}
+					
+						\begin{itemize}
+							\item Git
+						\end{itemize}        	
+        		
+        			\subsubsection{Hosting of code and / or documents}
+        				
+        				\begin{itemize}
+        					\item GitHub
+        				\end{itemize}
+        				
         \chapter{PROCESS ASSESSMENT AND CONTROL PROCESS}
                     
         \chapter{RISK MANAGEMENT PROCESS}
