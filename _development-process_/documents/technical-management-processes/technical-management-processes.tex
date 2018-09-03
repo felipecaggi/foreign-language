@@ -4,8 +4,10 @@
     \makeatletter\@addtoreset{chapter}{part}\makeatother
     \usepackage{graphicx}
     \graphicspath{ {./diagrams/images/} }
-    
     \usepackage{pdflscape}
+    \usepackage{color}
+    \definecolor{Blue}{rgb}{0,0,0.9}
+    \definecolor{Red}{rgb}{1,0,0}
     
     \begin{document}
     
@@ -58,7 +60,7 @@
         			\begin{center}
 		   				Release tag					        			
         			
-            			$[tgrl\_<Job Function ID Key>\_<Configuration Item Id Key For Management>\_<Tag Counter Per Item Of Configuration>]	$	
+            			$[tgrl\_<Job Function ID Key>\_<Configuration Item Id Key For Management>\_<Tag Counter Per Item Of Configuration>]$	
 					\end{center}					                
 					
             \section{References}
@@ -201,7 +203,21 @@
 					
 						\begin{itemize}
 							\item Git
-						\end{itemize}        	
+						\end{itemize}
+						
+			\textcolor{Red}{\section{Artifacts}}
+			\section{Process and Artifact}
+				
+				It is important to highlight the artifacts generated in each phase of the project. The mind map below represents a relationship between the processes and the artifacts generated during each process.
+				
+				\begin{landscape}
+				\textcolor{Red}{The figure below represents the mental map of the relationship between sections 2.1 and 2.2}
+				\begin{figure}[!htb] 
+					\center
+   					\includegraphics[scale=0.4,bb = 0 0 1545 525]{process-and-artifact.png}
+					\textcolor{Red}{\caption{Relationship between the activities of each phase of the project and the roles of the team members.}}
+				\end{figure}
+			\end{landscape}	
         				
         \chapter{PROCESS ASSESSMENT AND CONTROL PROCESS}
                     
