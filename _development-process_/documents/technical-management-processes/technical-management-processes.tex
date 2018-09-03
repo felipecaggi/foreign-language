@@ -2,6 +2,10 @@
 
     % chapters numbered without interruption (numbering through parts)
     \makeatletter\@addtoreset{chapter}{part}\makeatother
+    \usepackage{graphicx}
+    \graphicspath{ {./diagrams/images/} }
+    
+    \usepackage{pdflscape}
     
     \begin{document}
     
@@ -154,6 +158,16 @@
         			\item $[testr]$ Tester
         			
         		\end{itemize}
+                
+              
+			\begin{landscape}
+				The figure below represents the mental map of the relationship between sections 2.1 and 2.2  
+				\begin{figure}[!htb] 
+					\center
+   					\includegraphics[scale=0.4,bb = 0 0 1545 525]{mindmap-phases_and_roles.png}
+					\caption{Relationship between the activities of each phase of the project and the roles of the team members.}
+				\end{figure}
+			\end{landscape}		
         		
 			\section{Infrastructure and services required}
 				
@@ -170,18 +184,24 @@
 						\begin{itemize}
 							\item Texmaker
 						\end{itemize}
+	
+					\subsubsection{Edition}
+						
+						\begin{itemize}
+							\item Astah
+						\end{itemize}											
 					
+					\subsubsection{Hosting of code and / or documents}
+        				
+        				\begin{itemize}
+        					\item GitHub
+        				\end{itemize}
+        				
 					\subsubsection{Vesion control}
 					
 						\begin{itemize}
 							\item Git
 						\end{itemize}        	
-        		
-        			\subsubsection{Hosting of code and / or documents}
-        				
-        				\begin{itemize}
-        					\item GitHub
-        				\end{itemize}
         				
         \chapter{PROCESS ASSESSMENT AND CONTROL PROCESS}
                     
