@@ -164,21 +164,34 @@ The importance of the application for the users is characterized in order to tra
 
 		\section{Expansion of use cases}
 			
-			\begin{tabular}{|>{\centering\arraybackslash}m{6cm} |>{\centering\arraybackslash}m{6cm}|}
-				\hline
-				\centering \textbf{Column 1} & \textbf{column 2} 																						\\ \hline
-				Use-Case Name 			& Register texts																								\\ \hline
-				Short Description  		& The user can register new texts in the system. Thus, the system needs to store the user's text inputs.    	\\ \hline	
-				Preconditions  			& The user need stay logged in the system      																\\ \hline
-				Subsequent Conditions	& The registered texts     																						\\ \hline
-				Basic Flow  			& 1. The user selects to register text
-
-										  2. The system displays a form for the user to enter the text
-				
-										  3. The user enters text
-				
-										  4. The system records the user input and reports the user about the success									\\ \hline
-				Alternative Flows  		&       																										\\ \hline
+			\subsection{[UC001]}
+				\begin{tabular}{|>{\centering\arraybackslash}m{6cm} |>{\centering\arraybackslash}m{6cm}|}												   \hline
+					Use-Case Name 			& Register texts																							\\ \hline
+					Short Description  		& The user can register new texts in the system. Thus, the system needs to store the user's text inputs.    \\ \hline	
+					Preconditions  			& The user need stay logged in the system      																\\ \hline
+					Subsequent Conditions	& The registered texts     																					\\ \hline
+					Basic Flow  			& 	1. The user selects to register text
+											
+												2. The system displays a form for the user to enter the text
+											
+												3. The user enters text
+										
+												4. The system records the user input and reports the user about the success									\\ \hline
+					Alternative Flows  		&       																									\\ \hline
+				\end{tabular}
+			
+			\subsection{[UC002]}			
+				\begin{tabular}{|>{\centering\arraybackslash}m{6cm} |>{\centering\arraybackslash}m{6cm}|}										   \hline
+					Use-Case Name 			& [UC002] View the registered texts																	\\ \hline
+					Short Description  		& The user can view all registered texts. Thus, the system must present all registered texts.    	\\ \hline	
+					Preconditions  			& The user need stay logged in the system      														\\ \hline
+					Subsequent Conditions	& The information about selected text disponibilized for user										\\ \hline
+					Basic Flow  			& 	1. The system displays all registered texts														
+											  
+												2. The user selects text to view information														
+											  
+												3. The system displays an individual report containing information about the selected text		\\ \hline
+				Alternative Flows  		&       																								\\ \hline
 			\end{tabular}
 
 \end{document}
