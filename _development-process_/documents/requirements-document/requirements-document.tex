@@ -176,7 +176,7 @@ The importance of the application for the users is characterized in order to tra
 											
 												3. The user enters text
 										
-												4. The system records the user input and reports the user about the success									\\ \hline
+												4. The system records the user input and reports the user about the success								\\ \hline
 					Alternative Flows  		&       																									\\ \hline
 				\end{tabular}
 			
@@ -185,13 +185,25 @@ The importance of the application for the users is characterized in order to tra
 					Use-Case Name 			& [UC002] View the registered texts																	\\ \hline
 					Short Description  		& The user can view all registered texts. Thus, the system must present all registered texts.    	\\ \hline	
 					Preconditions  			& The user need stay logged in the system      														\\ \hline
-					Subsequent Conditions	& The information about selected text disponibilized for user										\\ \hline
-					Basic Flow  			& 	1. The system displays all registered texts														
+					Subsequent Conditions	& The display of all registered texts																\\ \hline
+					Basic Flow  			& 	1. The user selects to view all registered texts														
+											    
+												2. The system displays all registered texts														\\ \hline
+				Alternative Flows  		&       																								\\ \hline
+			\end{tabular}
+
+			\subsection{[UC003]}			
+				\begin{tabular}{|>{\centering\arraybackslash}m{6cm} |>{\centering\arraybackslash}m{6cm}|}										   			   									   \hline
+					Use-Case Name 			& [UC003] View information about each registered texts																								\\ \hline
+					Short Description  		& Each registered text has individual detailed information that the user can view, such as the number of words and repeats present in the text.    	\\ \hline	
+					Preconditions  			& The user need stay logged in the system      																										\\ \hline
+					Subsequent Conditions	& The information about selected text disponibilized for user																						\\ \hline
+					Basic Flow  			& 	1. The system displays all registered texts	(UC002)													
 											  
 												2. The user selects text to view information														
 											  
-												3. The system displays an individual report containing information about the selected text		\\ \hline
-				Alternative Flows  		&       																								\\ \hline
+												3. The system displays an individual report containing information about the selected text														\\ \hline
+				Alternative Flows  		&       																																				\\ \hline
 			\end{tabular}
 
 \end{document}
